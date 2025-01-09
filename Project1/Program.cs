@@ -25,7 +25,7 @@ app.UseEndpoints(endpoints =>
     endpoints.Map("/Map1/{vinod}", async (context) =>
     {
         string v = Convert.ToString(context.Request.RouteValues["vinod"]);
-        await context.Response.WriteAsync($"vinod routing{v}");
+        await context.Response.WriteAsync($"vinod routing{v}") ; 
     });
 
     endpoints.Map("/", async (context) =>
